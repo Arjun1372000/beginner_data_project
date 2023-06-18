@@ -4,3 +4,4 @@ It's a data analysis project in which I will be finding answers to some question
 data = https://insights.stackoverflow.com/survey
 modules = pandas, matplotlib, seaborn, loguru(maybe)
 19/06/2023 01:00 am; first local commit!! 
+verified tag?
