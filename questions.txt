@@ -1,0 +1,12 @@
+w.r.t  :: "with respect to"
+
+..What is the average age at which 1st code was written? 
+..What is the most common answers in columns 45:54?
+..Construct a graph; no:of people who have a SOaccount at that age vs Age.
+..What is the most common answers in columns 45:54 w.r.t the OS used?
+..Visualize JobSat, WorkWeekHrs, Age and Country.
+..Visualize Age1stCode, Country and JobSat.
+..Which is the country with most satisfied people(could visualize JobSat, Country and WorkWeekHrs)?
+..What is the maximum salary(ConvertedComp) w.r.t the Country?
+..What is the average, max and min workWeekHrs w.r.t Country?
+..What is the most used SocialMedia in each Countries?
