@@ -57,3 +57,7 @@ for i in lst:
     print("\n\t{}\n".format(i))
     for _ in range(45, 54):
         most_common(df.iloc[:, [_]].loc[df['OpSys'] == i])
+
+print("\n\tWhat is the most used SocialMedia in each Country?\n\tAns.")
+for country in df['Country'].dropna().unique():
+    print("\t{} : {}".format(country, df['SocialMedia'].loc[df.Country == country].value_counts().index[0]))
