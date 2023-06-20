@@ -6,7 +6,7 @@ w.r.t  :: "with respect to"
 ..What are the most common values in columns 45:54 w.r.t the OS used?
 ..Visualize JobSat, WorkWeekHrs, Age and Country.
 ..Visualize Age1stCode, Country and JobSat.
-..Which is the country with most satisfied people(could visualize JobSat, Country and WorkWeekHrs)?
-..What is the maximum salary(ConvertedComp) w.r.t the Country?
+..Which is the country with the most satisfied people(could visualize JobSat, Country and WorkWeekHrs)?
+..What is the maximum ConvertedComp w.r.t the Country?
 ..What is the average, max and min workWeekHrs w.r.t Country?
 ..What is the most used SocialMedia in each Country?

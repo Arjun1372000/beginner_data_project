@@ -71,7 +71,7 @@ print("\n\tWhat is the most used SocialMedia in each Country?\n\tAns. co_df")
 countries = df['Country'].dropna().unique()
 co_so = []
 for country in countries:
-    temp = df['SocialMedia'].loc[df.Country == country].value_counts().index[0]
+    temp = df.loc[df['Country'] == country, 'SocialMedia'].value_counts().index[0]
     co_so += [[country, temp]]
     # print("\t{} : {}".format(country, temp))
 c_df = pd.DataFrame(co_so, columns=['Country', 'SocialMedia'])
@@ -81,9 +81,23 @@ print("\n\tWhat is the average, max and min WorkWeekHrs w.r.t Country?\n\tAns. c
 co_hrs = []
 for country in countries:
     # nan values means that all the values of WorkWeekHrs that corresponds to that country are nan
-    temp = df['WorkWeekHrs'].loc[df.Country == country].dropna().mean()
-    temp1 = df['WorkWeekHrs'].loc[df.Country == country].dropna().max()
-    temp2 = df['WorkWeekHrs'].loc[df.Country == country].dropna().min()
+    temp = df.loc[df['Country'] == country, 'WorkWeekHrs'].dropna().mean()
+    temp1 = df.loc[df['Country'] == country, 'WorkWeekHrs'].dropna().max()
+    temp2 = df.loc[df['Country'] == country, 'WorkWeekHrs'].dropna().min()
     co_hrs += [[country, temp, temp1, temp2]]
     # print("\t{} : {} {} {}".format(country, temp, temp1, temp2))
 c_hrs_df = pd.DataFrame(co_hrs, columns=['Country', 'MeanWorkWeekHrs', 'MaxWorkWeekHrs', 'MinWorkWeekHrs'])
+
+print("\n\tWhat is the maximum salary(ConvertedComp) w.r.t the Country?\n\tAns. c_comp_df")
+co_comp = []
+for country in countries:
+    temp = df.loc[df['Country'] == country, 'ConvertedComp'].dropna().max()
+    co_comp += [[country, temp]]
+    # print("\t{} : {}".format(country, temp))
+c_comp_df = pd.DataFrame(co_comp, columns=['Country', 'MaxSalaryYearly'])
+
+# Editing of a Column according to a condition
+# df.loc[df['CompFreq'] == 'Monthly', 'ConvertedComp'] *= 12
+# df.loc[df['CompFreq'] == 'Weekly', 'ConvertedComp'] *= 50
+# print(df.loc[df['CompFreq'] == 'Monthly', 'ConvertedComp'])
+# print(df.loc[df['CompFreq'] == 'Weekly', 'ConvertedComp'])
