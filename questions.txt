@@ -10,3 +10,14 @@ w.r.t  :: "with respect to"
 ..What is the maximum ConvertedComp w.r.t the Country?
 ..What is the average, max and min workWeekHrs w.r.t Country?
 ..What is the most used SocialMedia in each Country?
+..How does Employment affect CodingActivities?
+..What are the most common LanguageHaveWorkedWith w.r.t Country, Age, EdLevel, etc.?
+..Visualize the relationship between YearsCode and YearsCodePro.
+..How does OrgSize relate to PurchaseInfluence?
+..Are there any relationships between PlatformHaveWorkedWith and PlatformWantToWorkWith?
+..Which LanguageWantToWorkWith are professionals most interested in learning?
+..How does SOVisitFreq affect the satisfaction level with the job?
+..How does OpSysProfessional impact the satisfaction level with the job?
+..What is the distribution of salaries across different countries?
+..Visualize the relationship between WorkExp and the level of job satisfaction.
+..How does NEWCollabToolsHaveWorkedWith impact job satisfaction?
