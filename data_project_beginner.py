@@ -42,7 +42,7 @@ def most_common(series_passed):
 
 # Q2
 print("\n\tWhat are the most common values in columns 45:54?\n\tAns.")
-for _ in range(45, 54):
+for _ in range(43, 54):
     most_common(df.iloc[:, _])
 
 # Q3
@@ -96,3 +96,10 @@ c_comp_df = pd.DataFrame(co_comp, columns=['Country', 'MaxSalaryYearly'])
 # df.loc[df['CompFreq'] == 'Weekly', 'ConvertedComp'] *= 50
 # print(df.loc[df['CompFreq'] == 'Monthly', 'ConvertedComp'])
 # print(df.loc[df['CompFreq'] == 'Weekly', 'ConvertedComp'])
+
+# This function returns a series of what % from each country uses Python. First we group the dataframe by Country,
+# then we access the 'LanguageHaveWorkedWith' column, then use the apply function to apply the desired function to each
+# group(Series object), at last accessing the desired value from multi-indexing(Country,'LanguageHaveWorkedWith')
+
+# Q.What is the % of people using Python in each country?
+python_pct_byCountry = df.groupby('Country')['LanguageWorkedWith'].apply(lambda x: x.str.split(';').explode().value_counts(normalize=True).mul(100)).loc[:, 'Python']
