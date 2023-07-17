@@ -26,16 +26,11 @@ df['Age1stCode'] = df["Age1stCode"].replace(['Younger than 5 years', 'Older than
 print('\tAns. {}'.format(df['Age1stCode'].astype(float).mean()))
 
 
-# function to tackle multiple values separate by ';' in a single column value
-def split_column_values(d):
-    d = d.dropna().values.tolist()
-    lst1 = []
-    for _ in d:
-        lst1 += _
-    lst = []
-    for _ in lst1:
-        lst += _.split(';')
-    return pd.Series(lst)
+# input: Series
+def split_column_values(series_data):
+    series_data = series_data.fillna('None')
+    return series_data.str.split(';').explode()
+# Output: Series
 
 
 # function to print the most common value in a series passed
@@ -48,7 +43,7 @@ def most_common(series_passed):
 # Q2
 print("\n\tWhat are the most common values in columns 45:54?\n\tAns.")
 for _ in range(45, 54):
-    most_common(df.iloc[:, [_]])
+    most_common(df.iloc[:, _])
 
 # Q3
 print("\n\tConstruct a graph; no:of people who have a SOAccount at that age vs Age.\n\tAns. fig1(var)")
@@ -64,7 +59,7 @@ lst = ['Windows', 'Linux-based', 'MacOS', 'BSD']
 for i in lst:
     print("\n\t{}\n".format(i))
     for _ in range(45, 54):
-        most_common(df.iloc[:, [_]].loc[df['OpSys'] == i])
+        most_common(df.iloc[:, _].loc[df['OpSys'] == i])
 
 # Q5
 print("\n\tWhat is the most used SocialMedia in each Country?\n\tAns. co_df")
