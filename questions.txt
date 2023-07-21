@@ -1,23 +1,23 @@
 w.r.t  :: "with respect to"
 
-..What is the average age at which 1st code was written?
-..What are the most common values in columns 45:54?
-..Construct a graph; no:of people who have a SOAccount at that age vs Age.
-..What are the most common values in columns 45:54 w.r.t the OS used?
-..Visualize JobSat, WorkWeekHrs, Age and Country.
-..Visualize Age1stCode, Country and JobSat.
-..Which is the country with the most satisfied people(could visualize JobSat, Country and WorkWeekHrs)?
-..What is the maximum ConvertedComp w.r.t the Country?
-..What is the average, max and min workWeekHrs w.r.t Country?
-..What is the most used SocialMedia in each Country?
-..How does Employment affect CodingActivities?
-..What are the most common LanguageHaveWorkedWith w.r.t Country, Age, EdLevel, etc.?
-..Visualize the relationship between YearsCode and YearsCodePro.
-..How does OrgSize relate to PurchaseInfluence?
-..Are there any relationships between PlatformHaveWorkedWith and PlatformWantToWorkWith?
-..Which LanguageWantToWorkWith are professionals most interested in learning?
-..How does SOVisitFreq affect the satisfaction level with the job?
-..How does OpSysProfessional impact the satisfaction level with the job?
-..What is the distribution of salaries across different countries?
-..Visualize the relationship between WorkExp and the level of job satisfaction.
-..How does NEWCollabToolsHaveWorkedWith impact job satisfaction?
+1..What is the average age at which 1st code was written?
+2..What are the most common values in columns 43:54?
+3..Construct a graph; no:of people who have a SOAccount at that age vs Age.
+4..What are the most common values in columns 43:54 w.r.t the OS used?
+5..Visualize JobSat, WorkWeekHrs, Age and Country.
+6..Visualize Age1stCode, Country and JobSat.
+7..Which is the country with the most satisfied people(could visualize JobSat, Country and WorkWeekHrs)?
+8..What is the maximum ConvertedComp w.r.t the Country?
+9..What is the average, max and min workWeekHrs w.r.t Country?
+10..What is the most used SocialMedia in each Country?
+11..How does Employment affect CodingActivities?
+12..What are the most common LanguageHaveWorkedWith w.r.t Country, Age, EdLevel, etc.?
+13..Visualize the relationship between YearsCode and YearsCodePro.
+14..How does OrgSize relate to PurchaseInfluence?
+15..Are there any relationships between PlatformHaveWorkedWith and PlatformWantToWorkWith?
+16..Which LanguageWantToWorkWith are professionals most interested in learning?
+17..How does SOVisitFreq affect the satisfaction level with the job?
+18..How does OpSysProfessional impact the satisfaction level with the job?
+19..What is the distribution of salaries across different countries?
+20..Visualize the relationship between WorkExp and the level of job satisfaction.
+21..How does NEWCollabToolsHaveWorkedWith impact job satisfaction?
